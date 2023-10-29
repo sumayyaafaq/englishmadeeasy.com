@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+<title>Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+p {
+  font-size: 18px;
+}
+body {
+  margin: 0;
+   font-family: Times new roman;
+}
+
+/* Style the header */
+.header {
+ font-family: Times new roman;
+  background-color: #37D3F7;
+  padding: 18px;
+  text-align: left;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #b66af7;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #0d0d0d;
+   font-family: Times new roman;
+  font-size:  20px;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+  .topnav a:hover,.dropdown:hover.dropbtn {
+  background-color: #b29aed;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+   padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+ background-color: #e339b0;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+/* Style the footer */
+.footer {
+  background-color: #b66af7;
+   font-family: Times new roman;
+  padding: 2px;
+  text-align: center;
+}
+ .background_image { position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 1; }
+	 .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+   font-family: Times new roman;
+  outline: none;
+  background-color: #b66af7;
+  color: black;
+  padding: 0px 0px;
+}
+.dropdown-content {
+  display: none;
+   font-size: 20px;
+  position: absolute;
+  background-color: #b66af7;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 10px;
+   font-family: Times new roman;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color:#b29aed ;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>ENGLISH MADE FUN</h1>
+<img src="logo.png" alt=" " class = "background_image">
+   <p><h2>Welcome to a platform where learning is fun.</h2></p>
+</div>
+<div class="topnav">
+  <a href="#Home">Home</a>
+   <a href="#Letters">
+    <div class="dropdown"> 
+    <button class="dropbtn">Letters
+      <i class="fa fa-caret-down"></i>
+    </button></a>
+    <div class="dropdown-content">
+      <a href="capital.html">CAPITAL</a>
+      <a href="small.html">small</a>
+      <a href="capital&small.html">CAPITAL & small</a>
+    </div>
+  </div> 
+  <a href="2Letters.html">2 Letter words</a>
+  <a href="#3Letter"><div class="dropdown"> 
+    <button class="dropbtn">3 Letters words
+      <i class="fa fa-caret-down"></i>
+    </button></a>
+	<div class="dropdown-content">
+      <a href="acluster.html">'A' cluster</a>
+      <a href="ecluster.html">'E' cluster</a>
+      <a href="icluster.html">'I' cluster</a>
+	  <a href="ocluster.html">'O' cluster</a>
+      <a href="ucluster.html">'U' cluster</a>
+    </div>
+	</div>
+</div>
+<div class="row">
+  <div class="column side">
+    <h2>Why wait?</h2>
+    <p>Let's fall in love with learning.</p>
+		<video width="230" height="180" controls>
+  <source src="movie.mp4" type="video/mp4">
+   </video>
+  </div>
+    <div class="column middle">
+	    <h1 style="text-align: center;" id="Home">Home page</h1>
+		<p><H2>This website is specially designed for kids and beginners, to develop a 
+	strong foundation of the english language at the ease of fingertips.</H2></p>
+   	<p><H2>Currently we have basics only. Soon we shall be updating to more advanced 
+	level by adding more elements like grammer, writing, literature and so on.</H2></p>
+              </div>
+    <div class="column side">
+    <h2>Who thought learing would be so easy?</h2>
+    <p>Learn english at the ease of your home and save a lot of money.</p>
+  </div>
+  </div>
+    <div class="footer">
+  <p><h2>Choose a starting point to begin learning.</h2></p>
+</div>
+</body>
+</html>
